@@ -1,5 +1,5 @@
 import Header from '../components/Header/IndexH'
-import Banner from '../components/Banner'
+import Banner from '../components/Banner/IndexB'
 
 function Home() {
   return (

@@ -11,8 +11,8 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/houses/:id" element={<Houses />} />
-                <Route path="/apropos" element={<About />} />
-                <Route path="/erreur404" element={<Error />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
