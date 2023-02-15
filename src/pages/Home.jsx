@@ -1,7 +1,7 @@
 import Header from '../components/Header/IndexH'
 import Banner from '../components/Banner/IndexB'
 
-function Home() {
+export default function Home() {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ function Home() {
     )
 }
 
-export default Home;
+

@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.header-container {
+    position: absolute;
+    width: 1240px;
+    left: 100px;
+    top: 40px;
+}
+
+.header-logo {
+    width: 210.32px;
+    height: 68px
+}
+.header-nav {
+    width: 116px;
+    height: 34px;
+    top: 17px;
+    left: 1124px;
+    color: #FF6060
+}

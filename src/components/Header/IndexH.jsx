@@ -1,33 +1,23 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+//import Logo from './assets/logo.png'
+import styles from '../Header/header.module.css'
 
-const HeaderNavAccueil = styled.span`
-position: absolute;
-left: 75.08%; 
-right: 13.95%
-top: 25%;
-bottom: 25%;
-color: #FF6060;
- `
-const HeaderNavAbout = styled.span`
-position: absolute;
-left: 90.65%; 
-right: 0%
-top: 25%;
-bottom: 25%;
-color: #FF6060;
- `
 function Header() {
     return (
-        <nav>
-            <HeaderNavAccueil>Accueil</HeaderNavAccueil>
-            <HeaderNavAbout>A Propos</HeaderNavAbout>
+        <header className={styles.header-container}>
+        <nav className={styles.header-nav}>
+            <Link to="/">
+                <img className={styles.header-logo} src={Logo} alt="Logo Kasa" />
+            </Link>
             <Link to="/">Accueil</Link>
-            <Link to="/houses">A propos</Link>
+            <Link to="/properties">A propos</Link>
         </nav>
+        </header>
     )
 };
 
-
-
 export default Header
+
+
+

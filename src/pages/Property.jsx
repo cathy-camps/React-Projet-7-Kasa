@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Houses() {
+function Property() {
     return (
         <div>
             <h1>Questionnaire</h1>
@@ -9,4 +9,4 @@ function Houses() {
     )
 }
 
-export default Houses
+export default Property
