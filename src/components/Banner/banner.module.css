@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px
+}
+
+.banner-title{
+    font-family: 'Montserrat';
+    size: 48px;
+    font-weight: 500px;
+    line-height: 68.45px;
+    color: #fff;
+}

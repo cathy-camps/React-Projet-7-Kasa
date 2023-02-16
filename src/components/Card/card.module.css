@@ -1,0 +1,32 @@
+.section-card {
+    width: 1240px;
+    height: 829px;
+    border-radius: 25px;
+    color: #f6f6f6;
+    position: absolute;
+    background-color: #f7f7f7;
+}
+
+.card {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.card:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 25.67;
+    color:#FFFFFF
+}
+
+.card-properties {
+    background-color: #FF6060;
+    border-radius: 10px;
+}
