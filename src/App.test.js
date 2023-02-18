@@ -7,3 +7,16 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+import { useNavigate } from 'react-router-dom';
+
+function MonComposant() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/route-de-destination');
+  }
+
+  return (
+    <button onClick={handleClick}>Aller à la route de destination</button>
+  );
+}
