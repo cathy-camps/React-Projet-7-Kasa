@@ -1,0 +1,20 @@
+.footer {
+    position: relative;
+    width: 375px;
+    height: 209px;
+    background: #000000;
+}
+
+.footer_logo{
+    width: 122px;
+    height: 39.44px;
+}
+
+.footer_text {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17.11px;
+    text-align: center;
+    color: #FFFFFF
+}

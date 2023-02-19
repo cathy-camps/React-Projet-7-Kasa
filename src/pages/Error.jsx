@@ -1,6 +1,6 @@
 import Header from '../components/Header/IndexH'
+import Footer from '../components/Footer/IndexF'
 
-function Error () {
-}
+function Error() {}
 
-export default Error 
+export default Error
