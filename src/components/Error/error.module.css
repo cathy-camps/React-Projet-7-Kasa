@@ -1,0 +1,17 @@
+.error_container {
+    display: flex;
+}
+
+.error_title {
+    font-family: 'Montserrat';
+    color: #FF6060;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 410.69;
+    text-align: center;
+}
+
+.error_p {
+    font-size: 36px;
+    line-height: 26px;
+}

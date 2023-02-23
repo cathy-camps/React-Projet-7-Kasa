@@ -20,3 +20,14 @@ function MonComposant() {
     <button onClick={handleClick}>Aller à la route de destination</button>
   );
 }
+
+function lastImageClick() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const lastIndex = images.length - 1
+  if (currentImageIndex === lastIndex) {
+    setCurrentImageIndex(0)
+  }
+}
+
+const details = data
+console.log(data)

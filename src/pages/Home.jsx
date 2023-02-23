@@ -10,8 +10,8 @@ export default function Home() {
       <main>
         <Banner origin="home" />
         <CardList />
-        <Footer />
       </main>
+      <Footer />
     </div>
   )
 }
