@@ -4,7 +4,7 @@ position: relative;
 }
 
 .banner_img {
-    width: 1240px;
+    width: 95%;
     height: 223px;
     border-radius: 25px;
     filter: brightness(0.75);

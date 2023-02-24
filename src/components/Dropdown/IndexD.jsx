@@ -12,10 +12,11 @@ function Dropdown() {
     newIsOpen[index] = !newIsOpen[index]
     setIsOpen(newIsOpen)
   }
+
   return (
     <div>
-      {data.map((item, index) => {
-        ;<div key={index} className={styles.dropdown}>
+      {data.map((item, index) => (
+        <div key={index} className={styles.dropdown}>
           <h3 className={styles.dropdown_title}>{item.title}</h3>
           <button
             onClick={() => clickDropdown(index)}
@@ -29,7 +30,7 @@ function Dropdown() {
             </div>
           )}
         </div>
-      })}
+      ))}
     </div>
   )
 }
