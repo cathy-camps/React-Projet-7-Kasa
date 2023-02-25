@@ -1,54 +1,53 @@
 .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown_button {
-    border: none;
-    background: transparent;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.dropdown_button:hover {
-    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    /*width: 75%;
+    padding-left: 250px;  */
 }
 
 .dropdown_content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: flex;
-    width: 1023px;
-    height: 47px;
+    width: 76%;
+    height: auto;
     border-radius: 5px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding: 50px 0 50px 50px;
+    margin-left: 220px
+}
+
+.dropdown_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
     background-color: #FF6060;
-    color: #F6F6F6;
-    margin-left: none;
-    padding : 50px 0px 50px 100px; 
-    z-index: 1;
+    color: #FFFFFF;
+    margin-left: 220px;
 }
 
-.dropdown_p{
-    margin: 0;
-    padding: 5px;
+.dropdown_hidden {
+display: none;
 }
 
-.dropdown_p:hover{
-    background-color: #F9F9F9;
+.dropdown_arrow {
+    width: 12px;
+    height: 12px;
+}
+
+.dropdown_arrow_rotate {
+    transform: rotate(180deg);
+    transition: transform 500ms;
 }
 
 .dropdown_title {
-    margin: 0;
-    width: 100px;
-    height: 34px;
-    top: 5.75px;
-    left: 18.08px;
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 24px;
-    line-height: 34.22;
-    color: #9d1a1a
+    font-size: 20px;
+    color: #FFFFFF
 }
 
 

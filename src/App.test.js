@@ -32,3 +32,4 @@ function lastImageClick() {
 const details = data
 console.log(data)
 
+

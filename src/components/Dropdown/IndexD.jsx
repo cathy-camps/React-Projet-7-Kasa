@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from '../Dropdown/dropdown.module.css'
+import arrow from '../../assets/arrow_dropdown.png'
 import data from './data.json'
-console.log(data)
 
 //initialisation du menu déroulant sur open=false par défaut
 function Dropdown() {
@@ -17,12 +17,13 @@ function Dropdown() {
     <div>
       {data.map((item, index) => (
         <div key={index} className={styles.dropdown}>
+          <img className={styles.dropdown_arrow} src={arrow} alt="flèche" />
           <h3 className={styles.dropdown_title}>{item.title}</h3>
           <button
             onClick={() => clickDropdown(index)}
             className={styles.dropdown_button}
           >
-            {isOpen[index] ? 'Close Dropdown' : 'Open Dropdown'}
+            {isOpen[index] ? '' : ''}
           </button>
           {isOpen[index] && (
             <div>
