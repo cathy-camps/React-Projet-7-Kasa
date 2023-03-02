@@ -32,4 +32,48 @@ function lastImageClick() {
 const details = data
 console.log(data)
 
+import React, { useState } from 'react'
+import Header from '../components/Header/IndexH'
+import Footer from '../components/Footer/IndexF'
+import styles from '../components/Property/property.module.css'
+import Properties from '../Properties/Properties'
+import { useParams } from 'react-router-dom'
+import PropertyCarousel from '../components/PropertyCarousel/PropertyCarousel'
+
+function Property() {
+  const { propertyId } = useParams()
+  const property = Properties.find((property) => property.id === propertyId)
+  const { pictures, title, location, host, rating, equipments, tags } = property
+
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+
+  const prevPhoto = () => {
+    setCurrentPhotoIndex((currentPhotoIndex - 1 + pictures.length) % pictures.length);
+  };
+
+  const nextPhoto = () => {
+    setCurrentPhotoIndex((currentPhotoIndex + 1) % pictures.length);
+  };
+
+  return (
+    <div>
+      <Header />
+      <main className={styles.property}>
+        <h1 className={styles.property_title}>{title}</h1>
+        <p className={styles.property_location}>{location}</p>
+        <div className={styles.property_tags}></div>
+        <PropertyCarousel
+          name={title}
+          photos={pictures}
+          currentIndex={currentPhotoIndex}
+          onPrevClick={prevPhoto}
+          onNextClick={nextPhoto}
+        />
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default Property
 

@@ -1,5 +1,13 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
 .error_container {
     display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 .error_title {
@@ -12,6 +20,14 @@
 }
 
 .error_p {
-    font-size: 36px;
-    line-height: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
 }
+
+.error_back_home {
+text-decoration: underline;
+color: #FF6060;
+font-size: 18px;
+}
+

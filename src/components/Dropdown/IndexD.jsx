@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from '../Dropdown/dropdown.module.css'
-import arrow from '../../assets/arrow_dropdown.png'
+import arrow from '../../assets/arrow.png'
 import data from './data.json'
 
 //initialisation du menu déroulant sur open=false par défaut
@@ -23,7 +23,9 @@ function Dropdown() {
             onClick={() => clickDropdown(index)}
             className={styles.dropdown_button}
           >
-            {isOpen[index] ? '' : ''}
+            {isOpen[index]
+              ? item.text_content
+              : `${item.title}` + `${item.arrow}`}
           </button>
           {isOpen[index] && (
             <div>

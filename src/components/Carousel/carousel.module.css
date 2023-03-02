@@ -1,0 +1,29 @@
+.property {
+    display: flex;
+}
+
+.carousel_img {
+    width: 95%;
+    height: 415px;
+    border-radius: 25 px;
+}
+
+.property_title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FF6060
+}
+
+.property_location {
+    font-size: 18px;
+}
+
+.property_tags {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+}
+
