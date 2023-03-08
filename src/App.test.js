@@ -75,5 +75,34 @@ function Property() {
   )
 }
 
-export default Property
 
+
+import React from 'react';
+import styles from './PropertyCarousel.module.css';
+
+function PropertyCarousel(props) {
+  const { name, photos, currentIndex, onPrevClick, onNextClick } = props;
+  const totalPhotos = photos.length;
+  const currentPhoto = photos[currentIndex];
+
+  return (
+    <div className={styles.carousel}>
+      <div className={styles.photo}>
+        <img src={currentPhoto} alt={name} />
+      </div>
+      <div className={styles.navigation}>
+        <button className={styles.prevButton} onClick={onPrevClick}>
+          Previous
+        </button>
+        <span className={styles.currentIndex}>
+          {currentIndex + 1} / {totalPhotos}
+        </span>
+        <button className={styles.nextButton} onClick={onNextClick}>
+          Next
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default PropertyCarousel;

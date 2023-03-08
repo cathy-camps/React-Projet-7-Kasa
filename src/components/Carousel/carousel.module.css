@@ -1,29 +1,22 @@
-.property {
-    display: flex;
+.carousel {
+   position: relative; 
+   margin-top: 30px;
+   width: 90%
 }
 
 .carousel_img {
     width: 95%;
     height: 415px;
     border-radius: 25 px;
+    object-fit: cover;
 }
 
-.property_title {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 50px;
-    color: #FF6060
+.carousel_controls {
+    color: white;
 }
 
-.property_location {
-    font-size: 18px;
+.carousel_index{
+    color: white;
 }
 
-.property_tags {
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: #FF6060;
-}
 
