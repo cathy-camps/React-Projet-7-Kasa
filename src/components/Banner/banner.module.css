@@ -25,10 +25,24 @@ position: relative;
     width: 100%;
 }
 
-@media screen and (min-width: 345px) and (max-width: 767px){
+@media all and (max-width:768px) {
+    .banner {
+        border-radius: 10px;
+        height: 111px;
+        width: 90%;
+        justify-content: flex-start;
+    }
 
+    .banner_title {
+        font-size: 24px;
+        min-width: 220px;
+        left: 9%;
+        width: 40%;
+    }
+
+    .banner_img {
+        min-width: 220px;
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1247px) {
-
-}

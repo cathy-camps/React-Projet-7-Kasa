@@ -31,3 +31,9 @@
     color: #FFFFFF;
     padding-top: 30px;
 }
+
+@media all and (max-width:768px) {
+    .footer_text {
+        font-size: 12px;
+    }
+}
