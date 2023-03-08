@@ -1,7 +1,12 @@
+* {
+    padding-left: 10%;
+}
+
 .carousel {
    position: relative; 
    margin-top: 30px;
-   width: 90%
+   padding-left: 10%
+ 
 }
 
 .carousel_img {

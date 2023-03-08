@@ -1,4 +1,4 @@
-import styles from '../Card/card.module.css'
+import styles from '../../Styles/card.module.css'
 import { useNavigate } from 'react-router-dom'
 
 function Card({ element }) {

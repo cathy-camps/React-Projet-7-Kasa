@@ -1,12 +1,12 @@
-import Header from '../components/Header/IndexH'
-import Footer from '../components/Footer/IndexF'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { NavLink } from 'react-router-dom'
-import styles from '../components/Error/error.module.css'
+import styles from '../Styles/error.module.css'
 
 function Error() {
   return (
     <div>
-      <Header />
+      <Header origin="error" />
       <div className={styles.error_section}>
         <div className={styles.error_title}>
           <h1>404</h1>

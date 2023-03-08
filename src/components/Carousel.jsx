@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Properties from '../../Properties/Properties'
-import styles from './carousel.module.css'
+import styles from '../../Styles/carousel.module.css'
 
 function PropertyCarousel() {
   const { id } = useParams()
@@ -24,7 +24,7 @@ function PropertyCarousel() {
   }
   return (
     <section className={styles.carousel}>
-      <div classname={styles.carousel_controls}>
+      <div className={styles.carousel_controls}>
         <button className={styles.carousel_controls} onClick={prevPicture}>
           &lt; Previous
         </button>

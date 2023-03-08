@@ -4,12 +4,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 95%;
+    width: auto;
     height: auto;
     border-radius: 25px;
     background-color: #f7f7f7;
-    margin-left: 100px;
-    margin-top: 40px; 
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 55px;
 }
 

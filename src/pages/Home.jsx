@@ -1,14 +1,14 @@
-import Header from '../components/Header/IndexH'
-import Banner from '../components/Banner/IndexB'
-import Card from '../components/Card/IndexC'
-import Footer from '../components/Footer/IndexF'
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import Footer from '../components/Footer'
 import Properties from '../Properties/Properties'
-import styles from '../components/Card/card.module.css'
+import styles from '../Styles/card.module.css'
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Header origin="home" />
       <main>
         <Banner origin="home" />
         <section className={styles.section_card}>

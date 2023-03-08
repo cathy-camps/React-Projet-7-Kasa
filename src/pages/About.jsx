@@ -1,15 +1,25 @@
-import Header from '../components/Header/IndexH'
-import Banner from '../components/Banner/IndexB'
-import Dropdown from '../components/Dropdown/IndexD'
-import Footer from '../components/Footer/IndexF'
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+import Dropdown from '../components/Dropdown/Dropdown'
+import Footer from '../components/Footer'
+import data from '../components/Dropdown/data.json'
+import styles from '../Styles/dropdown.module.css'
 
 function About() {
   return (
     <div>
-      <Header origin="home" />
+      <Header origin="about" />
       <main>
         <Banner origin="home" />
-        <Dropdown />
+        <div className={styles.mainDropdown}>
+          {data.map((item) => (
+            <Dropdown
+              key={item.id}
+              title={item.title}
+              text_content={item.text_content}
+            />
+          ))}
+        </div>
       </main>
       <Footer />
     </div>
