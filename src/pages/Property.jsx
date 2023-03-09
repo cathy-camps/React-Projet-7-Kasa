@@ -4,7 +4,7 @@ import styles from '../Styles/property.module.css'
 import Properties from '../Properties/Properties'
 import Dropdown from '../components/Dropdown/Dropdown'
 import PropertyCarousel from '../components/Carousel'
-import Vector from '../assets/Vector.png'
+import Rating from '../components/Rating'
 import { useParams } from 'react-router-dom'
 
 function PropertyRental() {
@@ -41,17 +41,24 @@ function PropertyRental() {
                 alt={`Propriétaire ${host.name}`}
               />
             </div>
-            <div className={styles.host_rating}>
-              <img src={Vector} alt="Etoiles" />
-              {host.rating}
+            <div>
+              <Rating ratings={host.rating} />
             </div>
           </div>
-          <div>
-            <Dropdown />
-          </div>
-          <Footer />
         </div>
       </div>
+      <section>
+        <Dropdown
+          key={displayDetails.id}
+          title="Description"
+          content={displayDetails.description}
+        ></Dropdown>
+        <Dropdown
+          title="Equipements"
+          content={displayDetails.equipments}
+        ></Dropdown>
+      </section>
+      <Footer />
     </div>
   ) : (
     <Error />

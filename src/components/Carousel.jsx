@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Properties from '../../Properties/Properties'
-import styles from '../../Styles/carousel.module.css'
+import Properties from '../Properties/Properties'
+import styles from '../Styles/carousel.module.css'
+import arrowLeft from '../assets/arrowLeft.png'
+import arrowRight from '../assets/arrowRight.png'
 
 function PropertyCarousel() {
   const { id } = useParams()
@@ -24,17 +26,21 @@ function PropertyCarousel() {
   }
   return (
     <section className={styles.carousel}>
-      <div className={styles.carousel_controls}>
-        <button className={styles.carousel_controls} onClick={prevPicture}>
-          &lt; Previous
-        </button>
-        <span className={styles.carousel_index}>
-          {currentPictureIndex + 1} / {pictures.length}
-        </span>
-        <button className={styles.carousel_controls} onClick={nextPicture}>
-          Next &gt;
-        </button>
-      </div>
+      <img
+        className={styles.carousel_arrow_left}
+        src={arrowLeft}
+        onClick={prevPicture}
+        alt="previous"
+      />
+      <span className={styles.carousel_index}>
+        {currentPictureIndex + 1} / {pictures.length}
+      </span>
+      <img
+        className={styles.carousel_arrow_right}
+        src={arrowRight}
+        onClick={nextPicture}
+        alt="next"
+      />
       {pictures.map((picture, index) => (
         <div key={index}>
           {index === currentPictureIndex && (
