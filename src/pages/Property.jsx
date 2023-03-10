@@ -10,10 +10,10 @@ import { useParams } from 'react-router-dom'
 function PropertyRental() {
   const { id } = useParams()
   const displayDetails = Properties.find((property) => property.id === id)
-  const { title, location, tags, host, rating, description, equipments } =
+  const { title, location, tags, host, rating, description, equipment } =
     displayDetails || {}
 
-  return displayDetails ? (
+  return (
     <div>
       <Header origin="property" />
       <PropertyCarousel />
@@ -42,26 +42,28 @@ function PropertyRental() {
               />
             </div>
             <div>
-              <Rating ratings={host.rating} />
+              <Rating className={styles.host_rating} rating={rating} />
             </div>
           </div>
         </div>
       </div>
-      <section>
+      <section className={styles.dropdown_property}>
         <Dropdown
+          className={styles.dropdown_property_title}
           key={displayDetails.id}
           title="Description"
-          content={displayDetails.description}
+          text_content={displayDetails.description}
         ></Dropdown>
         <Dropdown
           title="Equipements"
-          content={displayDetails.equipments}
+          className={styles.dropdown_property_title}
+          text_content={displayDetails.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
         ></Dropdown>
       </section>
       <Footer />
     </div>
-  ) : (
-    <Error />
   )
 }
 
