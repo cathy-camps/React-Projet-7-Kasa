@@ -91,16 +91,19 @@
 }
 
 .dropdown_property {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0 100px 180px;
     font-size: 18px;
-    width: 40%
+    margin-left: 10%; 
+}
+
+.dropdown_property_banner {
+   display: flex; 
+   justify-content: space-between;
+   max-width: 50%
 }
 
 .dropdown_property_title {
     font-size: 18px;
+    width: 40%
 }
 
 .dropdown_property_description {

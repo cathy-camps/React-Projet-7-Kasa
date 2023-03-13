@@ -18,6 +18,10 @@
     height: 68px;
 }
 
+.header_nav {
+padding-right : 320px;
+}
+
 .header_nav_empty {
     color: #FF6060;
     text-decoration: none;

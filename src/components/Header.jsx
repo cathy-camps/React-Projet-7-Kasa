@@ -9,7 +9,7 @@ function Header(props) {
         <NavLink to="/">
           <img className={styles.header_logo} src={Logo} alt="Logo Kasa" />
         </NavLink>
-        <div>
+        <div className={styles.header_nav}>
           <NavLink
             className={
               props.origin === 'home'

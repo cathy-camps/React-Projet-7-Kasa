@@ -19,7 +19,7 @@
 }
 
 .dropdown_content {
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 5px;
     background-color: #F6F6F6;

@@ -6,6 +6,7 @@ import arrowLeft from '../assets/arrowLeft.png'
 import arrowRight from '../assets/arrowRight.png'
 
 function PropertyCarousel() {
+  const [currentPictureIndex, setCurrentPictureIndex] = useState(0)
   const { id } = useParams()
   //récupération de l'id du logement dans les paramètres d'URL
   const property = Properties.find((property) => property.id === id)
@@ -13,7 +14,6 @@ function PropertyCarousel() {
     return null
   }
   const { pictures } = property
-  const [currentPictureIndex, setCurrentPictureIndex] = useState(0)
   const prevPicture = () => {
     setCurrentPictureIndex(
       currentPictureIndex === 0 ? pictures.length - 1 : currentPictureIndex - 1

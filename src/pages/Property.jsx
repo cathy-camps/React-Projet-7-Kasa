@@ -6,12 +6,14 @@ import Dropdown from '../components/Dropdown/Dropdown'
 import PropertyCarousel from '../components/Carousel'
 import Rating from '../components/Rating'
 import { useParams } from 'react-router-dom'
+import Error from './Error'
 
 function PropertyRental() {
   const { id } = useParams()
   const displayDetails = Properties.find((property) => property.id === id)
   const { title, location, tags, host, rating, description, equipment } =
     displayDetails || {}
+  if (!displayDetails) return <Error />
 
   return (
     <div>
@@ -48,19 +50,21 @@ function PropertyRental() {
         </div>
       </div>
       <section className={styles.dropdown_property}>
-        <Dropdown
-          className={styles.dropdown_property_title}
-          key={displayDetails.id}
-          title="Description"
-          text_content={displayDetails.description}
-        ></Dropdown>
-        <Dropdown
-          title="Equipements"
-          className={styles.dropdown_property_title}
-          text_content={displayDetails.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        ></Dropdown>
+        <div className={styles.dropdown_property_banner}>
+          <Dropdown
+            className={styles.dropdown_property_title}
+            key={displayDetails.id}
+            title="Description"
+            text_content={displayDetails.description}
+          ></Dropdown>
+          <Dropdown
+            title="Equipements"
+            className={styles.dropdown_property_title}
+            text_content={displayDetails.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          ></Dropdown>
+        </div>
       </section>
       <Footer />
     </div>
