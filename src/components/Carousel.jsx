@@ -26,21 +26,25 @@ function PropertyCarousel() {
   }
   return (
     <section className={styles.carousel}>
-      <img
-        className={styles.carousel_arrow_left}
-        src={arrowLeft}
-        onClick={prevPicture}
-        alt="previous"
-      />
+      {pictures.length > 1 && (
+        <img
+          className={styles.carousel_arrow_left}
+          src={arrowLeft}
+          onClick={prevPicture}
+          alt="previous"
+        />
+      )}
       <span className={styles.carousel_index}>
         {currentPictureIndex + 1} / {pictures.length}
       </span>
-      <img
-        className={styles.carousel_arrow_right}
-        src={arrowRight}
-        onClick={nextPicture}
-        alt="next"
-      />
+      {pictures.length > 1 && (
+        <img
+          className={styles.carousel_arrow_right}
+          src={arrowRight}
+          onClick={nextPicture}
+          alt="next"
+        />
+      )}
       {pictures.map((picture, index) => (
         <div key={index}>
           {index === currentPictureIndex && (

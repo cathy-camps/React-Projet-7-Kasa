@@ -9,7 +9,7 @@ function Dropdown(props) {
 
   return (
     <div className={styles.dropdown}>
-      <div className={styles.dropdow_title_arrow}>
+      <div className={styles.dropdown_title_arrow}>
         <h3 className={styles.dropdown_title}>{props.title}</h3>
         <img
           className={styles.dropdown_arrow}

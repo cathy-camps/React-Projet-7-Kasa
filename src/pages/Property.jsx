@@ -4,9 +4,11 @@ import styles from '../Styles/property.module.css'
 import Properties from '../Properties/Properties'
 import Dropdown from '../components/Dropdown/Dropdown'
 import PropertyCarousel from '../components/Carousel'
-import Rating from '../components/Rating'
+import Rating from '../components/Property/Rating'
+import HostProfile from '../components/Property/Host_profile'
 import { useParams } from 'react-router-dom'
 import Error from './Error'
+import HostTag from '../components/Property/Host_tag'
 
 function PropertyRental() {
   const { id } = useParams()
@@ -23,26 +25,11 @@ function PropertyRental() {
         <div className={styles.section_details_property}>
           <h1 className={styles.property_title}>{title}</h1>
           <p className={styles.property_location}>{location}</p>
-          <div className={styles.property_tags}>
-            {tags.map((tag) => {
-              return (
-                <p key={`${tag}`} className={styles.tag}>
-                  {tag}
-                </p>
-              )
-            })}
-          </div>
+          <HostTag tags={tags} />
         </div>
         <div className={styles.section_details_host}>
           <div className={styles.host}>
-            <div className={styles.host_profile}>
-              <p className={styles.host_name}>{host.name}</p>
-              <img
-                className={styles.host_img}
-                src={host.picture}
-                alt={`Propriétaire ${host.name}`}
-              />
-            </div>
+            <HostProfile host={host} />
             <div>
               <Rating className={styles.host_rating} rating={rating} />
             </div>
