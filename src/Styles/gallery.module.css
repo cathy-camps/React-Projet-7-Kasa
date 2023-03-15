@@ -4,18 +4,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: auto;
+    width: 80%;
     height: auto;
     border-radius: 25px;
     background-color: #f7f7f7;
     padding: 55px;
- 
+    margin-top: -140px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .card {
     position: relative;
     height: 340px;
-    width: 90vw;
     border-radius: 10px;
     background-color: #FF6060;
     color: #FFFFFF;
