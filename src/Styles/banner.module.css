@@ -1,9 +1,19 @@
 
+.banner_parent {
+    display: flex;
+    justify-content: center;
+}
+
 .banner {
 position: relative;
 padding-left: 10%;
 padding-right: 10%;
 margin-bottom: 60px;
+width: 90%;
+height: 400px;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .banner_img {
@@ -29,10 +39,17 @@ margin-bottom: 60px;
 }
 
 @media all and (max-width:768px) {
+    .banner_parent {
+        display: flex;
+        justify-content: center;
+        }
+
     .banner {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        width: 90%;
+        max-width: 100%;
+        padding: 0;
+        height: auto;
     }
 
     .banner_img {
@@ -44,7 +61,7 @@ margin-bottom: 60px;
     left: 50px;
     top: 30px;  
     line-height: 26px;
-    font-size: 24px;
+    font-size: 26px;
     display: initial
     }
 }

@@ -1,7 +1,9 @@
+
 .carousel {
     position: relative;
     margin-top: 30px;
     padding-left: 10%;
+    width: 80%
 }
 
 .carousel_img {
@@ -35,6 +37,10 @@
 }
 
 @media all and (max-width: 768px) {
+.carousel {
+    width: 90%
+
+}  
 .carousel_arrow_right {
     left: 315px;
 }

@@ -44,6 +44,8 @@ function PropertyRental() {
             title="Description"
             text_content={displayDetails.description}
           ></Dropdown>
+        </div>
+        <div className={styles.dropdown_property_banner}>
           <Dropdown
             title="Equipements"
             className={styles.dropdown_property_title}

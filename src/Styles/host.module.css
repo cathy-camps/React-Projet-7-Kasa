@@ -1,3 +1,4 @@
+
 .section_details_host {
     display: flex;
     flex-direction: column;
@@ -57,7 +58,8 @@
     }
 
     .host_name {
-        margin-right: 10px;
+        margin-right: 20px;
+        margin-left: 140px;
     }
 
     .host_img {

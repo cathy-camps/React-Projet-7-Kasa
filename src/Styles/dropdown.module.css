@@ -1,7 +1,8 @@
+
 .mainDropdown {
     margin-left: 10%;
     margin-right: 10%;
-    width: auto;
+    width: 85%;
     margin-bottom: 50px;
 }
 
@@ -25,6 +26,7 @@
     background-color: #F6F6F6;
     color: #FF6060;
     padding: 50px 0 50px 50px;
+    margin-top: -5px;
 }
 
 .dropdown_button {
@@ -73,4 +75,9 @@ display: none;
         font-size: 12px;
         font-weight: 400;
     }
+
+    .dropdown_title_arrow {
+        width: 90%
+    }
+
 }
