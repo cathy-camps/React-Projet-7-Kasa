@@ -1,7 +1,6 @@
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Dropdown from '../components/Dropdown/Dropdown'
-import Footer from '../components/Footer'
 import data from '../components/Dropdown/data.json'
 import styles from '../Styles/dropdown.module.css'
 

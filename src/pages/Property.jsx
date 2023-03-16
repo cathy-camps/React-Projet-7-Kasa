@@ -1,5 +1,4 @@
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import styles from '../Styles/property.module.css'
 import Properties from '../Properties/Properties'
 import Dropdown from '../components/Dropdown/Dropdown'
