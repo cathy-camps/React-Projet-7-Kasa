@@ -5,10 +5,10 @@ body {
 }
 
 .banner {
-position: relative;
-padding-left: 10%;
-padding-right: 10%;
-margin-bottom: 60px;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 60px;
 }
 
 .banner_img {
@@ -21,15 +21,13 @@ margin-bottom: 60px;
 .banner_title {
     position: absolute;
     top: 45%;
-    left: 65%;
+    left: 30%;
     transform: translate(-30%, -70%);
     font-family: 'Montserrat';
     font-style: normal;
     color: #FFFFFF;
-    size: 48px;
-    font-weight: 500px;
+    font-size: 48px;
     line-height: 70px;
-    width: 100%;
     /*display: none;*/
 }
 
@@ -51,7 +49,7 @@ margin-bottom: 60px;
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .banner_title {
         top: 40%;
-        left: 55%
+        left: 35%
     }
 }
 
@@ -62,6 +60,7 @@ margin-bottom: 60px;
         margin-left: -2.5%;
         margin-right: 0%;
     }
+
     .banner_title {
         font-size: 24px;
         line-height: 36px;

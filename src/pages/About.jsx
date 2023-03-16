@@ -21,7 +21,6 @@ function About() {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   )
 }

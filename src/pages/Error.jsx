@@ -22,7 +22,6 @@ function Error() {
           </NavLink>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

@@ -55,8 +55,8 @@ height: 40px;
 /* Smartphones styles */
 @media screen and (max-width: 767px) {
     .section_card {
-       /* margin-left: 5%;
-        margin-right: 5%; */
+        margin-left: 5%;
+        margin-right: 5%; 
         padding: 30px;
     }
 
@@ -90,12 +90,12 @@ height: 40px;
 
     .card {
         height: 300px;
-        width: 300px;
+        width: 480px;
         margin-bottom: 40px;
     }
 
     .card_img {
-        width: 300px;
+        width: 480px;
         height: 300px;
     }
 

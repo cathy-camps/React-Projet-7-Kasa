@@ -55,7 +55,6 @@ function PropertyRental() {
           ></Dropdown>
         </div>
       </section>
-      <Footer />
     </div>
   )
 }

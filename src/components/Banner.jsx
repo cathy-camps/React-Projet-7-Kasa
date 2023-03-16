@@ -13,7 +13,7 @@ function Banner(props) {
         />
         <div>
           <h1 className={styles.banner_title}>
-            Chez vous, <br /> partout et ailleurs
+            Chez vous, partout et ailleurs
           </h1>
         </div>
       </div>

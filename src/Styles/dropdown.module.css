@@ -66,7 +66,7 @@ display: none;
 /* Tablet styles */
 @media only screen and (max-width: 1024px) {
     .mainDropdown {
-        margin-left: 5%;
+        margin-left: 10%;
         margin-right: 5%;
     }
 
@@ -79,6 +79,11 @@ display: none;
         height: 50px;
         font-size: 16px;
     }
+
+    .dropdown_content {
+        padding: 20px 5px 20px 20px;
+        width: 96%;
+           }
 }
 
 /* Smartphone styles */
