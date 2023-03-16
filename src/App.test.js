@@ -1,108 +1,88 @@
-import { render, screen } from '@testing-library/react';
-import App from './pages/Home';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-import { useNavigate } from 'react-router-dom';
-
-function MonComposant() {
-  const navigate = useNavigate();
-
-  function handleClick() {
-    navigate('/route-de-destination');
+/*
+@media all and(max - width: 768px) {
+    .banner {
+    padding - left: 5 %;
+    padding - right: 5 %;
+    margin - bottom: 30px
   }
 
-  return (
-    <button onClick={handleClick}>Aller à la route de destination</button>
-  );
-}
-
-function lastImageClick() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const lastIndex = images.length - 1
-  if (currentImageIndex === lastIndex) {
-    setCurrentImageIndex(0)
+    .banner_img {
+    height: 150px;
+    border - radius: 15px;
   }
+
+    .banner_title {
+    left: 50px;
+    top: 30px;
+    line - height: 26px;
+    font - size: 26px;
+    display: initial;
+  }
+} 
+
+@media all and (max-width: 768px) {
+    .section_card {
+        padding: 0px;
+        display: flex;
+        justify-content: center; 
+        margin-top: -280px;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        max-width: 100%;
+        
+    }
+
+    .card {
+        height: 250px;
+        width: 90%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card_img {
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .card_title {
+        top: 75%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        height: 30px;
+    }
 }
 
-const details = data
-console.log(data)
+@media all and (max-width:768px) {
+    .mainDropdown {
+        margin-top: -280px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-import React, { useState } from 'react'
-import Header from '../components/Header/IndexH'
-import Footer from '../components/Footer/IndexF'
-import styles from '../components/Property/property.module.css'
-import Properties from '../Properties/Properties'
-import { useParams } from 'react-router-dom'
-import PropertyCarousel from '../components/PropertyCarousel/PropertyCarousel'
+    .dropdown_button {
+        height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+    }
 
-function Property() {
-  const { propertyId } = useParams()
-  const property = Properties.find((property) => property.id === propertyId)
-  const { pictures, title, location, host, rating, equipments, tags } = property
+    .dropdown_arrow {
+        width: 15px;
+        height: 9px;
+    }
 
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+    .dropdown_content{
+        font-size: 12px;
+        font-weight: 400;
+        width: 75%; 
+    }
 
-  const prevPhoto = () => {
-    setCurrentPhotoIndex((currentPhotoIndex - 1 + pictures.length) % pictures.length);
-  };
-
-  const nextPhoto = () => {
-    setCurrentPhotoIndex((currentPhotoIndex + 1) % pictures.length);
-  };
-
-  return (
-    <div>
-      <Header />
-      <main className={styles.property}>
-        <h1 className={styles.property_title}>{title}</h1>
-        <p className={styles.property_location}>{location}</p>
-        <div className={styles.property_tags}></div>
-        <PropertyCarousel
-          name={title}
-          photos={pictures}
-          currentIndex={currentPhotoIndex}
-          onPrevClick={prevPhoto}
-          onNextClick={nextPhoto}
-        />
-      </main>
-      <Footer />
-    </div>
-  )
+    .dropdown_title_arrow {
+        width: 90%
+    }
 }
 
-
-
-import React from 'react';
-import styles from './PropertyCarousel.module.css';
-
-function PropertyCarousel(props) {
-  const { name, photos, currentIndex, onPrevClick, onNextClick } = props;
-  const totalPhotos = photos.length;
-  const currentPhoto = photos[currentIndex];
-
-  return (
-    <div className={styles.carousel}>
-      <div className={styles.photo}>
-        <img src={currentPhoto} alt={name} />
-      </div>
-      <div className={styles.navigation}>
-        <button className={styles.prevButton} onClick={onPrevClick}>
-          Previous
-        </button>
-        <span className={styles.currentIndex}>
-          {currentIndex + 1} / {totalPhotos}
-        </span>
-        <button className={styles.nextButton} onClick={onNextClick}>
-          Next
-        </button>
-      </div>
-    </div>
-  );
-}
-
-export default PropertyCarousel;
+*/

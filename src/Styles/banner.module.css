@@ -4,13 +4,10 @@ position: relative;
 padding-left: 10%;
 padding-right: 10%;
 margin-bottom: 60px;
-width: 90%;
-height: 400px;
-margin-left: auto;
-margin-right: auto;
 }
 
 .banner_img {
+    width: 100%;
     height: 223px;
     border-radius: 25px;
     filter: brightness(0.75);
@@ -18,37 +15,40 @@ margin-right: auto;
 
 .banner_title {
     position: absolute;
-    top: 25%;
-    left: 35%;
-    transform: translate(-50% -50%);
+    top: 45%;
+    left: 65%;
+    transform: translate(-30%, -70%);
     font-family: 'Montserrat';
     font-style: normal;
-    color: #ffffff;
+    color: #FFFFFF;
     size: 48px;
     font-weight: 500px;
     line-height: 70px;
     width: 100%;
-    display: none
+    /*display: none;*/
 }
 
-@media all and (max-width:768px) {
-    .banner {
-        width: auto;
-        padding: 0;
-    }
-
-    .banner_img {
-        height: 150px;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .banner_title {
-    left: 50px;
-    top: 30px;  
-    line-height: 26px;
-    font-size: 26px;
-    display: initial
+        top: 40%;
+        left: 55%
     }
 }
+
+/* Smartphone styles */
+@media screen and (max-width: 767px) {
+    .banner {
+        width: 85% !important;
+        margin-left: -2.5%;
+        margin-right: 0%;
+    }
+    .banner_title {
+        font-size: 24px;
+        line-height: 36px;
+        top: 100px;
+        left: 46%;
+        /*display: initial*/
+    }
+}
+
