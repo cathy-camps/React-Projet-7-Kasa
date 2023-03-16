@@ -10,7 +10,7 @@ function About() {
     <div>
       <Header origin="about" />
       <main>
-        <Banner origin="home" />
+        <Banner origin="about" />
         <div className={styles.mainDropdown}>
           {data.map((item) => (
             <Dropdown
