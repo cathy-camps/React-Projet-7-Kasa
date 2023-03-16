@@ -1,7 +1,8 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    overflow: hidden;
 }
 
 .section_card {
@@ -54,8 +55,8 @@ height: 40px;
 /* Smartphones styles */
 @media screen and (max-width: 767px) {
     .section_card {
-        margin-left: 5%;
-        margin-right: 5%;
+       /* margin-left: 5%;
+        margin-right: 5%; */
         padding: 30px;
     }
 

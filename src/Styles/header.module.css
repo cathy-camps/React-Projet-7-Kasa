@@ -1,14 +1,13 @@
 
 ._header {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 30px 0px 60px 69px
 }
 
 .header_container {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +19,7 @@
 }
 
 .header_nav {
-padding-right : 20%;
+padding-right : 6%;
 }
 
 .header_nav_empty {
@@ -52,7 +51,6 @@ padding-right : 20%;
         .header_logo {
             width: 140px;
             height: 45px;
-            padding-left: 2%;
         }
         
         .header_container {
@@ -60,27 +58,28 @@ padding-right : 20%;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin: 2%
+            margin-left: -54px
         }
 
         .header_nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-left: 10%;
+            padding-left: 5%;
         }
-
+        
         .header_nav_empty {
             font-size: 12px;
             padding-left: 20px;
             padding-right: 20px;
             text-transform: uppercase;
-        }
+                }
+
 
         .header_nav_underline {
             font-size: 12px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
             padding-bottom: 5px;
             border-bottom: 1px solid #FF6060;
             text-transform: uppercase;

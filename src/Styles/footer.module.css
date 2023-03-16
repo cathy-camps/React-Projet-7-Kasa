@@ -35,16 +35,21 @@ body {
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     .footer {
         height: 170px;
+        margin-bottom: 0px;
+        /*position: fixed;*/
+        width: 100%;
     }
 
     .footer_logo {
         width: 100px;
         height: 32.4px;
         margin-top: 30px;
+        padding-right: 60px;
     }
 
     .footer_text {
         font-size: 22px;
         padding-top: 25px;
+        padding-right: 60px;
     }
 }
