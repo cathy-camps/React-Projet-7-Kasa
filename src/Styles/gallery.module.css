@@ -2,32 +2,32 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto
 }
 
 .section_card {
     display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: auto;
-        height: auto;
-        border-radius: 25px;
-        background-color: #f7f7f7;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 100px;
-        padding: 55px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    margin-left: 10%;
+    margin-right: 10%;
+    /*margin-bottom: 100px;*/
+    padding: 55px;
 }
 
 .card {
     position: relative;
-        height: 340px;
-        width: 340px;
-        border-radius: 10px;
-        background-color: #FF6060;
-        color: #FFFFFF;
-        margin-bottom: 55px;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    margin-bottom: 55px;
 }
 
 .card:hover{
@@ -42,15 +42,15 @@ body {
 }
 
 .card_title {
-position: absolute;
-top: 80%;
-left: 5%;
-font-family: 'Montserrat';
-font-weight: 500px;
-font-size: 18px;
-color: #FFFFFF;
-height: 40px;
-}
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-family: 'Montserrat';
+    font-weight: 500px;
+    font-size: 18px;
+    color: #FFFFFF;
+    height: 40px;
+    }
 
 /* Smartphones styles */
 @media screen and (max-width: 767px) {
@@ -58,6 +58,7 @@ height: 40px;
         margin-left: 5%;
         margin-right: 5%; 
         padding: 30px;
+        justify-content: center;
     }
 
     .card {
@@ -86,6 +87,7 @@ height: 40px;
     .section_card {
         padding: 40px;
         margin-bottom: 80px;
+        justify-content: center;
     }
 
     .card {

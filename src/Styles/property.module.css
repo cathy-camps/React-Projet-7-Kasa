@@ -123,13 +123,14 @@ body {
     .dropdown_property {
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
     font-size: 16px;
-    width: auto
+    width: 85%;
+    margin-left: 20px;
+    margin-right: 20px;
     }
 
     .dropdown_property_banner {
-    width: 80%
+    width: 100%
     }
 
     .dropdown_property_item {

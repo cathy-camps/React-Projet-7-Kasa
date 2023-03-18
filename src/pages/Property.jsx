@@ -18,8 +18,9 @@ function PropertyRental() {
 
   return (
     <div>
-      <Header origin="property" />
+      <Header origin="home" />
       <PropertyCarousel />
+
       <div className={styles.section_details}>
         <div className={styles.section_details_property}>
           <h1 className={styles.property_title}>{title}</h1>
