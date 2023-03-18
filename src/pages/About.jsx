@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import Dropdown from '../components/Dropdown/Dropdown'
 import data from '../components/Dropdown/data.json'
 import styles from '../Styles/dropdown.module.css'
@@ -20,6 +21,7 @@ function About() {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

@@ -35,7 +35,8 @@
     border-radius: 100%;
 }
 
-@media screen and (max-width: 768px) {
+/* Smartphone styles */
+@media all and (max-width: 767px) {
     .section_details_host {
         margin-top: 1.5rem;
     }

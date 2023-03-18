@@ -55,7 +55,7 @@ body {
 }
 
 /* Smartphone styles */
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     .banner {
         width: 85% !important;
         margin-left: -2.5%;

@@ -84,7 +84,8 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+/* Smartphone styles */
+@media all and (max-width: 767px) {
     .section_details {
         flex-direction: column;
         align-items: center;
@@ -127,6 +128,8 @@ body {
     width: 85%;
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     }
 
     .dropdown_property_banner {

@@ -22,11 +22,11 @@
 }
 
 .carousel_arrow_right {
-   right: 140px; 
+   right: 180px; 
 }
 
 .carousel_arrow_left {
-    left: 240px;
+    left: 180px;
 }
 
 .carousel_index {
@@ -37,17 +37,23 @@
     position: absolute;
 }
 
-@media all and (max-width: 768px) {
+/* Smartphone styles */
+@media all and (max-width: 767px) {
 .carousel_img {
     width: 100%
 }
 
+.carousel_arrow_left,
+.carousel_arrow_right {
+    height: 30px;
+    top: 45%
+}
 
 .carousel_arrow_right {
-    left: 315px;
+    left: 280px;
 }
 
 .carousel_arrow_left {
-    left: 40px;
+    left: 80px;
 }
 }

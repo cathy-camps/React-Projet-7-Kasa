@@ -17,7 +17,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     /*margin-bottom: 100px;*/
-    padding: 55px;
+    padding: 40px;
 }
 
 .card {
@@ -53,7 +53,7 @@ body {
     }
 
 /* Smartphones styles */
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     .section_card {
         margin-left: 5%;
         margin-right: 5%; 

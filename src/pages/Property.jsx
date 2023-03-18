@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import styles from '../Styles/property.module.css'
 import Properties from '../Properties/Properties'
 import Dropdown from '../components/Dropdown/Dropdown'
+import Footer from '../components/Footer'
 import PropertyCarousel from '../components/Carousel'
 import Rating from '../components/Property/Rating'
 import HostProfile from '../components/Property/Host_profile'
@@ -55,6 +56,7 @@ function PropertyRental() {
           ></Dropdown>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

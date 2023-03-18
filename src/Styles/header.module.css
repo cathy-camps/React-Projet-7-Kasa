@@ -43,15 +43,20 @@
     border-bottom: 2px solid #FF6060
 }
 
-@media all and (max-width: 768px) {
+/* Smartphone styles */
+@media all and (max-width: 767px) {
         ._header {
             margin-bottom: 30px; 
             padding-left: 5%;
         }
 
+        .header_container {
+            width: auto
+        }
+
         .header_logo {
-            width: 140px;
-            height: 45px;
+            width: 110px;
+            height: 40px;
         }
         
         .header_container {
@@ -63,12 +68,14 @@
             justify-content: space-between;
             align-items: center;
             padding-left: 5%;
+            width: 140px;
+            flex-wrap: nowrap;
         }
         
         .header_nav_empty {
             font-size: 12px;
             padding-left: 20px;
-            padding-right: 20px;
+            padding-right: 0px;
             text-transform: uppercase;
         }
 
